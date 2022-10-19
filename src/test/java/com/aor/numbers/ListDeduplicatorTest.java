@@ -34,6 +34,7 @@ public class ListDeduplicatorTest {
     @Test
     public void bug_deduplicate_8726() {
         List<Integer> list = Arrays.asList(1,2,4,2);
+        expected = Arrays.asList(1,2,4);
         class StubListSorter implements GenericListSorter{
             @Override public List<Integer> sort(List<Integer> list) {
                 return  Arrays.asList(1, 2, 2, 4);
