@@ -36,5 +36,4 @@ public class ListSorterTest {
 
         Assertions.assertEquals(Arrays.asList(1, 2, 2, 4), sorted);
     }
-
 }
